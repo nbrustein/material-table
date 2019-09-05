@@ -22,7 +22,8 @@ class MTableAction extends React.Component {
 
     const handleOnClick = event => {
       if (action.onClick) {
-        action.onClick(event, this.props.data);
+        debugger
+        action.onClick(event, this.props.data, this.props.onFilterChanged);
         event.stopPropagation();
       }
     };

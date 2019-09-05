@@ -498,6 +498,7 @@ export default class MaterialTable extends React.Component {
               onSearchChanged={this.onSearchChange}
               onColumnsChanged={this.onChangeColumnHidden}
               localization={{ ...MaterialTable.defaultProps.localization.toolbar, ...this.props.localization.toolbar }}
+              onFilterChanged={this.onFilterChange}
             />
           }
           {props.options.grouping &&
